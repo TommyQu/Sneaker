@@ -46,6 +46,29 @@
     rm_corridor_two_index = 0;
     rm_side_restroom_index = 0;
     rm_egypt_index = 0;
+    
+    globalvar has_coin;
+    globalvar has_main_note;
+    globalvar has_bone;
+    globalvar has_key;
+    globalvar has_snack;
+    has_coin = false;
+    has_main_note = false;
+    has_bone = false;
+    has_key = false;
+    has_snack = false;
+    
+    globalvar has_note_one;
+    globalvar has_note_two;
+    has_note_one = false;
+    has_note_two = false;
+    
+    globalvar isTouched_ball_trap;
+    isTouched_ball_trap = false;
+    
+    with(obj_player) {
+        instance_destroy();
+    }
 }</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>

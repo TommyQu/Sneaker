@@ -19,18 +19,61 @@
         <sprite>sprites\spr_car</sprite>
       </sprites>
       <sprites name="spr_main">
-        <sprite>sprites\spr_funtain</sprite>
+        <sprite>sprites\spr_board</sprite>
+        <sprite>sprites\spr_dinosaur</sprite>
+        <sprite>sprites\spr_find_bone</sprite>
+        <sprite>sprites\spr_investigate</sprite>
+        <sprite>sprites\spr_board_take_care</sprite>
+        <sprite>sprites\spr_board_msg</sprite>
       </sprites>
       <sprites name="spr_global">
+        <sprite>sprites\spr_hit_trap</sprite>
         <sprite>sprites\spr_enter</sprite>
         <sprite>sprites\spr_trap</sprite>
+        <sprite>sprites\spr_message</sprite>
+        <sprite>sprites\spr_desk</sprite>
       </sprites>
       <sprite>sprites\spr_diamond</sprite>
+      <sprites name="spr_restaurant">
+        <sprite>sprites\spr_find_coin</sprite>
+        <sprite>sprites\spr_find_snack</sprite>
+        <sprite>sprites\spr_put_coin</sprite>
+        <sprite>sprites\spr_funtain</sprite>
+        <sprite>sprites\spr_vending_machine</sprite>
+        <sprite>sprites\spr_vending_machine_thorn</sprite>
+        <sprite>sprites\spr_chair</sprite>
+      </sprites>
+      <sprites name="spr_locker">
+        <sprite>sprites\spr_cabinet</sprite>
+        <sprite>sprites\spr_no_key</sprite>
+        <sprite>sprites\spr_note_one</sprite>
+      </sprites>
+      <sprites name="spr_locker_restroom">
+        <sprite>sprites\spr_toilet_bowl</sprite>
+        <sprite>sprites\spr_divider</sprite>
+        <sprite>sprites\spr_sink</sprite>
+        <sprite>sprites\spr_toilet_paper</sprite>
+        <sprite>sprites\spr_key</sprite>
+        <sprite>sprites\spr_find_key</sprite>
+      </sprites>
+      <sprites name="spr_corridor">
+        <sprite>sprites\spr_ball_trap</sprite>
+        <sprite>sprites\spr_rolling_ball</sprite>
+      </sprites>
+      <sprites name="spr_china">
+        <sprite>sprites\spr_buddha</sprite>
+        <sprite>sprites\spr_china</sprite>
+        <sprite>sprites\spr_china_two</sprite>
+        <sprite>sprites\spr_vase</sprite>
+        <sprite>sprites\spr_note_two</sprite>
+      </sprites>
     </sprites>
     <sprites name="spr_menu">
       <sprite>sprites\spr_play</sprite>
       <sprite>sprites\spr_credit</sprite>
       <sprite>sprites\spr_title</sprite>
+      <sprite>sprites\spr_game_over</sprite>
+      <sprite>sprites\spr_restart</sprite>
     </sprites>
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_controller</sprite>
@@ -46,22 +89,47 @@
       <sprite>sprites\spr_player_right_mid</sprite>
       <sprite>sprites\spr_player_right</sprite>
     </sprites>
+    <sprites name="spr_gamebar">
+      <sprite>sprites\spr_up</sprite>
+      <sprite>sprites\spr_down</sprite>
+      <sprite>sprites\spr_left</sprite>
+      <sprite>sprites\spr_right</sprite>
+      <sprite>sprites\spr_a</sprite>
+    </sprites>
+    <sprites name="spr_tool">
+      <sprite>sprites\spr_tool_coin</sprite>
+      <sprite>sprites\spr_tool_key</sprite>
+      <sprite>sprites\spr_tool_bone</sprite>
+      <sprite>sprites\spr_tool</sprite>
+      <sprite>sprites\spr_drop_down_menu</sprite>
+      <sprite>sprites\spr_tool_snack</sprite>
+    </sprites>
+    <sprites name="spr_enemy">
+      <sprite>sprites\spr_ghost</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_entrance</background>
     <background>background\bg_corridor</background>
     <background>background\bg_global</background>
+    <background>background\bg_main</background>
+    <background>background\bg_locker</background>
+    <background>background\bg_locker_restroom</background>
+    <background>background\bg_restaurant</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
+    <object>objects\obj_player</object>
+    <object>objects\obj_enemy</object>
     <objects name="obj_menu">
       <object>objects\obj_play</object>
       <object>objects\obj_credit</object>
       <object>objects\obj_title</object>
       <object>objects\obj_menu_player</object>
       <object>objects\obj_menu_diamond</object>
+      <object>objects\obj_restart</object>
+      <object>objects\obj_game_over</object>
     </objects>
-    <object>objects\obj_player</object>
     <objects name="obj_element">
       <objects name="obj_entrance">
         <object>objects\obj_museum</object>
@@ -74,13 +142,16 @@
       </objects>
       <objects name="obj_main">
         <object>objects\obj_main_corridor_enter</object>
-        <object>objects\obj_fountain</object>
         <object>objects\obj_main_locker_enter</object>
         <object>objects\obj_main_restaurant_enter</object>
+        <object>objects\obj_board</object>
+        <object>objects\obj_dinosaur</object>
+        <object>objects\obj_board_two</object>
       </objects>
       <objects name="obj_locker">
         <object>objects\obj_locker_main</object>
         <object>objects\obj_locker_restroom</object>
+        <object>objects\obj_cabinet</object>
       </objects>
       <objects name="obj_global">
         <object>objects\obj_enter_up</object>
@@ -88,23 +159,39 @@
         <object>objects\obj_enter_right</object>
         <object>objects\obj_enter_left</object>
         <object>objects\obj_trap_block</object>
+        <object>objects\obj_message</object>
+        <object>objects\obj_desk</object>
       </objects>
       <objects name="obj_locker_restroom">
         <object>objects\obj_restroom_locker_enter</object>
+        <object>objects\obj_toilet_bowl</object>
+        <object>objects\obj_divider</object>
+        <object>objects\obj_sink</object>
+        <object>objects\obj_toilet_paper</object>
       </objects>
       <objects name="obj_restaurant">
+        <object>objects\obj_vending_machine</object>
+        <object>objects\obj_vending_machine_trap</object>
         <object>objects\obj_restaurant_main_enter</object>
+        <object>objects\obj_fountain</object>
+        <object>objects\obj_chair</object>
       </objects>
       <objects name="obj_corridor">
         <object>objects\obj_corridor_china_enter</object>
         <object>objects\obj_corridor_europe_enter</object>
         <object>objects\obj_corridor_main_enter</object>
         <object>objects\obj_corridor_greece_enter</object>
+        <object>objects\obj_ball_trap</object>
+        <object>objects\obj_rolling_ball</object>
       </objects>
       <objects name="obj_china">
         <object>objects\obj_china_corridor_enter</object>
         <object>objects\obj_china_africa_enter</object>
         <object>objects\obj_china_painting_enter</object>
+        <object>objects\obj_buddha</object>
+        <object>objects\obj_china</object>
+        <object>objects\obj_china_two</object>
+        <object>objects\obj_vase</object>
       </objects>
       <objects name="obj_africa">
         <object>objects\obj_africa_china_enter</object>
@@ -139,6 +226,24 @@
     <objects name="obj_player">
       <object>objects\obj_player_down</object>
     </objects>
+    <objects name="obj_gamebar">
+      <object>objects\obj_gamebar_global</object>
+      <object>objects\obj_up</object>
+      <object>objects\obj_down</object>
+      <object>objects\obj_left</object>
+      <object>objects\obj_right</object>
+      <object>objects\obj_a</object>
+    </objects>
+    <objects name="obj_enemy">
+      <object>objects\obj_ghost</object>
+    </objects>
+    <objects name="obj_tool">
+      <object>objects\obj_tool</object>
+      <object>objects\obj_tool_bone</object>
+      <object>objects\obj_tool_coin</object>
+      <object>objects\obj_tool_key</object>
+      <object>objects\obj_tool_snack</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
@@ -155,6 +260,7 @@
       <room>rooms\rm_europe</room>
       <room>rooms\rm_greece</room>
     </rooms>
+    <room>rooms\rm_game_over</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
