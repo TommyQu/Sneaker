@@ -66,6 +66,9 @@
     globalvar isTouched_ball_trap;
     isTouched_ball_trap = false;
     
+    globalvar bullet_num;
+    bullet_num = 5;
+    
     with(obj_player) {
         instance_destroy();
     }

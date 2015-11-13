@@ -128,6 +128,7 @@
     <instance objName="obj_block" x="360" y="416" name="inst_0363C9BC" locked="0" code="" scaleX="0.800000011920929" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="749" y="416" name="inst_A3F41BCE" locked="0" code="" scaleX="0.800000011920929" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trap_block" x="383" y="156" name="inst_C37A2D3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ghost" x="1024" y="160" name="inst_F23BE94F" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_global" x="0" y="-64" w="128" h="128" xo="256" yo="128" id="10001439" name="inst_52F49E21" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -59,6 +59,7 @@
       <sprites name="spr_corridor">
         <sprite>sprites\spr_ball_trap</sprite>
         <sprite>sprites\spr_rolling_ball</sprite>
+        <sprite>sprites\spr_alarm_line</sprite>
       </sprites>
       <sprites name="spr_china">
         <sprite>sprites\spr_buddha</sprite>
@@ -88,6 +89,10 @@
       <sprite>sprites\spr_player_left_mid</sprite>
       <sprite>sprites\spr_player_right_mid</sprite>
       <sprite>sprites\spr_player_right</sprite>
+      <sprite>sprites\spr_bullet_right</sprite>
+      <sprite>sprites\spr_bullet_up</sprite>
+      <sprite>sprites\spr_bullet_down</sprite>
+      <sprite>sprites\spr_bullet_left</sprite>
     </sprites>
     <sprites name="spr_gamebar">
       <sprite>sprites\spr_up</sprite>
@@ -95,6 +100,7 @@
       <sprite>sprites\spr_left</sprite>
       <sprite>sprites\spr_right</sprite>
       <sprite>sprites\spr_a</sprite>
+      <sprite>sprites\spr_b</sprite>
     </sprites>
     <sprites name="spr_tool">
       <sprite>sprites\spr_tool_coin</sprite>
@@ -183,6 +189,7 @@
         <object>objects\obj_corridor_greece_enter</object>
         <object>objects\obj_ball_trap</object>
         <object>objects\obj_rolling_ball</object>
+        <object>objects\obj_alarm_line</object>
       </objects>
       <objects name="obj_china">
         <object>objects\obj_china_corridor_enter</object>
@@ -225,6 +232,7 @@
     </objects>
     <objects name="obj_player">
       <object>objects\obj_player_down</object>
+      <object>objects\obj_bullet</object>
     </objects>
     <objects name="obj_gamebar">
       <object>objects\obj_gamebar_global</object>
@@ -233,6 +241,7 @@
       <object>objects\obj_left</object>
       <object>objects\obj_right</object>
       <object>objects\obj_a</object>
+      <object>objects\obj_b</object>
     </objects>
     <objects name="obj_enemy">
       <object>objects\obj_ghost</object>

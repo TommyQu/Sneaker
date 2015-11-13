@@ -105,6 +105,7 @@
     <instance objName="obj_right" x="359" y="471" name="inst_B48BD882" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_a" x="1056" y="481" name="inst_5E8AB06F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tool" x="1088" y="256" name="inst_4ACB97CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_b" x="960" y="576" name="inst_E77D6771" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_entrance" x="0" y="416" w="128" h="128" xo="128" yo="128" id="10000292" name="inst_1E2FC6CB" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

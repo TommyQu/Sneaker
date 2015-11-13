@@ -28,8 +28,8 @@
     if(global.rm_corridor_index = 1) 
     {
         global.rm_corridor_index = 0;
-        obj_player.x = 1132;
-        obj_player.y = 256;
+        obj_player.x = 1632;
+        obj_player.y = 156;
     }
     if(global.rm_restaurant_index = 1) 
     {
@@ -240,6 +240,7 @@
     <instance objName="obj_dinosaur" x="1632" y="864" name="inst_6EFBCDDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_message" x="2176" y="1728" name="inst_E8F6AC7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_board_two" x="2528" y="608" name="inst_C539F952" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ghost" x="2752" y="1248" name="inst_EF8DE68C" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_global" x="1536" y="0" w="128" h="128" xo="0" yo="0" id="10000851" name="inst_0514E82F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
