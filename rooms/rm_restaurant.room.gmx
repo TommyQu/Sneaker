@@ -103,8 +103,6 @@
     <instance objName="obj_ghost" x="864" y="320" name="inst_1055EB56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vending_machine" x="288" y="1184" name="inst_30A26A35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vending_machine_trap" x="800" y="96" name="inst_0B86E789" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="269" y="32" name="inst_5EB50A4A" locked="0" code="" scaleX="0.800000011920929" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="748" y="1120" name="inst_EBD84157" locked="0" code="" scaleX="0.800000011920929" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chair" x="256" y="608" name="inst_254F8F32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chair" x="256" y="704" name="inst_78CA5951" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chair" x="352" y="800" name="inst_C2565E5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -112,6 +110,8 @@
     <instance objName="obj_chair" x="608" y="800" name="inst_75154B39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chair" x="672" y="704" name="inst_BE6697FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chair" x="672" y="608" name="inst_8817BEE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_vending_machine_normal_one" x="320" y="96" name="inst_07CE6DBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_vending_machine_normal_two" x="768" y="1184" name="inst_DA1856E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_entrance" x="1024" y="-96" w="128" h="128" xo="0" yo="256" id="10001474" name="inst_57F79B4A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -150,8 +150,6 @@
     <tile bgName="bg_entrance" x="1088" y="160" w="128" h="128" xo="0" yo="256" id="10001509" name="inst_D6538C0C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_entrance" x="1088" y="288" w="128" h="128" xo="0" yo="256" id="10001510" name="inst_8987C3F1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_entrance" x="1088" y="416" w="128" h="128" xo="0" yo="256" id="10001512" name="inst_0DA897A5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_restaurant" x="256" y="32" w="128" h="128" xo="0" yo="0" id="10001764" name="inst_DF0B6A3D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_restaurant" x="736" y="1120" w="128" h="128" xo="0" yo="0" id="10001765" name="inst_CC9D465E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

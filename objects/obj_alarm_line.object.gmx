@@ -5,7 +5,7 @@
   <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -76,18 +76,21 @@
           <argument>
             <kind>1</kind>
             <string>alarm_time += 1;
-if(alarm_time &gt; 40 &amp;&amp; alarm_time &lt; 80) {
+if(alarm_time &gt; 20 &amp;&amp; alarm_time &lt; 60) {
     visible = true;
     if(place_meeting(x, y, obj_player) &amp;&amp; is_hit = false) {
         effect_create_above(ef_explosion, x, y, 2, c_red);
         lives -= 1;
         is_hit = true;
     }
+    audio_play_sound(sd_lazer, 1, false);
 }
-if(alarm_time = 80) {
+else if(alarm_time &gt; 60 &amp;&amp; alarm_time &lt; 70) {
     visible = false;
-    alarm_time = 0;
     is_hit = false;
+}
+else if (alarm_time &gt;= 70) {
+    alarm_time = 0;
 }
 </string>
           </argument>

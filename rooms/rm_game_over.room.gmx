@@ -12,7 +12,10 @@
   <showcolour>-1</showcolour>
   <code>with(obj_player) {
     instance_destroy();
-}</code>
+}
+audio_play_sound(sd_game_over, 1, false);
+global.is_playing_bg = false;
+audio_stop_sound(sd_game_bg);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

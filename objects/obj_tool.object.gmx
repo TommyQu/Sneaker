@@ -153,6 +153,9 @@ if(global.has_key = true) {
 if(global.has_snack = true) {
     instance_create(view_xview+870, view_yview+240, obj_tool_snack);
 }
+if(global.has_sword = true) {
+    instance_create(view_xview+970, view_yview+240, obj_sword_one);
+}
 </string>
           </argument>
         </arguments>

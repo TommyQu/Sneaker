@@ -23,14 +23,14 @@
         obj_player.x = 1984;
         obj_player.y = 568;
     }
-    if(global.rm_europe_index = 1) {
-        global.rm_europe_index = 0;
+    if(global.rm_rome_index = 1) {
+        global.rm_rome_index = 0;
         obj_player.x = 1120;
         obj_player.y = 192;
     }
     if(global.rm_greece_index = 1) {
         global.rm_greece_index = 0;
-        obj_player.x = 288;
+        obj_player.x = 238;
         obj_player.y = 518;
     }
 }</code>
@@ -131,7 +131,7 @@
     <instance objName="obj_block" x="2272" y="672" name="inst_8A577C77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_corridor_china_enter" x="2240" y="544" name="inst_28DA2AE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
     <instance objName="obj_corridor_main_enter" x="1216" y="1280" name="inst_B450314F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
-    <instance objName="obj_corridor_europe_enter" x="1088" y="0" name="inst_F2F18B67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_corridor_rome_enter" x="1088" y="0" name="inst_F2F18B67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_corridor_greece_enter" x="32" y="672" name="inst_50A13B00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_controller_rm_corridor" x="0" y="0" name="inst_802EB78D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ball_trap" x="1160" y="256" name="inst_EE4BD75A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

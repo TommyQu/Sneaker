@@ -26,8 +26,6 @@
     globalvar rm_greece_index;
     globalvar rm_rome_index;
     globalvar rm_europe_index;
-    globalvar rm_corridor_two_index;
-    globalvar rm_side_restroom_index;
     globalvar rm_egypt_index;
     
     rm_entrance_index = 0;
@@ -43,8 +41,6 @@
     rm_greece_index = 0;
     rm_rome_index = 0;
     rm_europe_index = 0;
-    rm_corridor_two_index = 0;
-    rm_side_restroom_index = 0;
     rm_egypt_index = 0;
     
     globalvar has_coin;
@@ -52,23 +48,35 @@
     globalvar has_bone;
     globalvar has_key;
     globalvar has_snack;
+    globalvar has_sword;
     has_coin = false;
     has_main_note = false;
     has_bone = false;
     has_key = false;
     has_snack = false;
+    has_sword = false;
     
     globalvar has_note_one;
     globalvar has_note_two;
+    globalvar has_note_three;
     has_note_one = false;
     has_note_two = false;
+    has_note_three = false;
     
     globalvar isTouched_ball_trap;
+    globalvar get_china_bullet;
+    globalvar get_bullet_pack;
+    globalvar frame_hint;
     isTouched_ball_trap = false;
+    get_china_bullet = false;
+    get_bullet_pack = false;
+    frame_hint = 0;
     
     globalvar bullet_num;
-    bullet_num = 5;
+    bullet_num = 7;
     
+    globalvar is_playing_bg;
+    is_playing_bg = false;
     with(obj_player) {
         instance_destroy();
     }
