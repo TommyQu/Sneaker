@@ -81,6 +81,46 @@
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_multitouch</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>612</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -261,8 +301,10 @@
             <kind>1</kind>
             <string>{
     if(instance_exists(obj_warrior) = false &amp;&amp; instance_exists(obj_warrior_two) = false) {
-        with(obj_sword_one) {
-            instance_destroy();
+        if(instance_exists(obj_sword_one)) {
+            with(obj_sword_one) {
+                instance_destroy();
+            }
         }
     }
 }
@@ -1519,6 +1561,7 @@ if(global.rm_name = "Main") {
     if(distance_to_point(obj_board_two.x, obj_board_two.y) &lt; 100) {
         instance_create(obj_board_two.x, obj_board_two.y - 130, obj_message);
         obj_message.sprite_index = spr_board_take_care;
+        audio_play_sound(sd_pick_tool, 1, false);
     }
 }
 else if(global.rm_name = "Restaurant") {    
@@ -1596,6 +1639,7 @@ else if(global.rm_name = "Painting") {
         obj_message.sprite_index = spr_note_three;
         global.has_note_three = true;
         global.frame_hint = 2;
+        audio_play_sound(sd_pick_tool, 1, false);
     }
     else if(global.has_bone = false &amp;&amp; global.has_note_three = false) {
         instance_create(obj_frame_note.x, obj_frame_note.y - 60, obj_message);
@@ -1614,10 +1658,30 @@ else if(global.rm_name = "Rome") {
     if(instance_exists(obj_warrior) &amp;&amp; distance_to_point(obj_warrior.x, obj_warrior.y) &lt; 120 &amp;&amp; global.has_sword = true) {
         obj_warrior.warrior_lives -= 1;
         effect_create_above(ef_explosion, obj_warrior.x, obj_warrior.y, 1, c_black);
+        audio_play_sound(sd_vending_trap, 1, false);
     }
     if(instance_exists(obj_warrior_two) &amp;&amp; distance_to_point(obj_warrior_two.x, obj_warrior_two.y) &lt; 120 &amp;&amp; global.has_sword = true) {
         obj_warrior_two.warrior_lives -= 1;
         effect_create_above(ef_explosion, obj_warrior_two.x, obj_warrior_two.y, 1, c_black);
+        audio_play_sound(sd_vending_trap, 1, false);
+    }
+    if(global.has_note_four = false &amp;&amp; distance_to_point(obj_treasure.x, obj_treasure.y) &lt; 80) {
+        instance_create(obj_treasure.x, obj_treasure.y - 70, obj_message);
+        obj_message.sprite_index = spr_note_four;
+        obj_treasure.sprite_index = spr_treasure_open;
+        global.has_note_four = true;
+        audio_play_sound(sd_pick_tool, 1, false);
+    }
+}
+else if(global.rm_name = "Greece") {
+    if(global.has_note_one = true &amp;&amp; global.has_note_two = true &amp;&amp; global.has_note_three = true &amp;&amp; global.has_note_four = true) {
+        with(obj_door) {
+            instance_destroy();
+        }
+    }
+    else {
+        instance_create(obj_door.x+50, obj_door.y - 60, obj_message);
+        obj_message.sprite_index = spr_msg_should_find_pwd;
     }
 }
 
@@ -1648,25 +1712,25 @@ else if(global.rm_name = "Rome") {
     if(sprite_index = spr_player_right || sprite_index = spr_player_right_mid) {
         var bullet = instance_create(x, y+60, obj_bullet);
         bullet.sprite_index = spr_bullet_right;
-        bullet.speed = 20;
+        bullet.speed = 30;
         bullet.direction = 0;
     }
     if(sprite_index = spr_player_left || sprite_index = spr_player_left_mid) {
         var bullet = instance_create(x, y+60, obj_bullet);
         bullet.sprite_index = spr_bullet_left;
-        bullet.speed = 20;
+        bullet.speed = 30;
         bullet.direction = 180;
     }
     if(sprite_index = spr_player_up_left || sprite_index = spr_player_up_mid || sprite_index = spr_player_up_right) {
         var bullet = instance_create(x+50, y+60, obj_bullet);
         bullet.sprite_index = spr_bullet_up;
-        bullet.speed = 20;
+        bullet.speed = 30;
         bullet.direction = 90;
     }
     if(sprite_index = spr_player_down_left || sprite_index = spr_player_down_mid || sprite_index = spr_player_down_right) {
         var bullet = instance_create(x+50, y+50, obj_bullet);
         bullet.sprite_index = spr_bullet_down;
-        bullet.speed = 20;
+        bullet.speed = 30;
         bullet.direction = 270;
     }
     global.bullet_num -= 1;

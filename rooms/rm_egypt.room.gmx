@@ -8,16 +8,18 @@
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
-  <colour>12632256</colour>
+  <colour>6796468</colour>
   <showcolour>-1</showcolour>
   <code>{
     global.rm_name = "Egypt";
     global.rm_egypt_index = 1;
     if(global.rm_greece_index = 1) {
         global.rm_greece_index = 0;
-        obj_player.x = 3136;
+        obj_player.x = 3232;
         obj_player.y = 544;
     }
+    audio_stop_all();
+    audio_play_sound(sd_egypt_bg, 1, true);
 }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
@@ -95,8 +97,8 @@
     <instance objName="obj_block" x="-64" y="960" name="inst_29FCAFF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="-64" y="832" name="inst_FC9ACCEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="-64" y="704" name="inst_2DBA7B8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="-64" y="576" name="inst_7D569341" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="-64" y="448" name="inst_26EC0C9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block" x="-128" y="576" name="inst_7D569341" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block" x="-128" y="448" name="inst_26EC0C9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="-64" y="320" name="inst_A1CD317C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="-64" y="192" name="inst_24653A2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="-64" y="64" name="inst_597FC579" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -135,27 +137,42 @@
     <instance objName="obj_block" x="3392" y="576" name="inst_A7CCC788" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sphinx" x="3200" y="352" name="inst_BCABDB48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sphinx_back" x="3200" y="800" name="inst_CDDE0B50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_scarb" x="2624" y="480" name="inst_4F31F39F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_scarb" x="2368" y="640" name="inst_F241B450" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_scarb" x="2272" y="352" name="inst_472EFC65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_scarb" x="2112" y="576" name="inst_C85B52A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_scarb" x="2112" y="832" name="inst_737D98EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_scarb" x="2464" y="896" name="inst_F5B90451" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_heroglyph" x="1664" y="352" name="inst_5D119AC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hieroglyphic_six" x="2496" y="1120" name="inst_6FE20B25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hieroglyphic_one" x="2816" y="1152" name="inst_7AD7CAD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hieroglyphic_two" x="2816" y="128" name="inst_4B3AD81E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hieroglyphic_three" x="2496" y="128" name="inst_B13A33A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hieroglyphic_four" x="2144" y="1120" name="inst_D8394436" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hieroglyphic_five" x="2144" y="192" name="inst_5C538191" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hieroglyphic_seven" x="1824" y="1120" name="inst_6FFD799C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hieroglyphic_one" x="1824" y="128" name="inst_1754F104" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_anubis" x="224" y="320" name="inst_8B24EBC3" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_anubis" x="224" y="800" name="inst_ED69677A" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_cat" x="1472" y="704" name="inst_A274EC0F" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
-    <instance objName="obj_pyramid" x="1504" y="128" name="inst_FD8A1666" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mummy" x="352" y="576" name="inst_EA062460" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_scarab" x="2464" y="544" name="inst_4F31F39F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_scarab" x="2240" y="640" name="inst_F241B450" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_scarab" x="2240" y="448" name="inst_472EFC65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_scarab" x="2048" y="576" name="inst_C85B52A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_scarab" x="2080" y="768" name="inst_737D98EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_scarab" x="2368" y="800" name="inst_F5B90451" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_heroglyph" x="2272" y="896" name="inst_5D119AC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hieroglyphic_six" x="2496" y="1024" name="inst_6FE20B25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hieroglyphic_one" x="2816" y="1024" name="inst_7AD7CAD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hieroglyphic_two" x="2816" y="256" name="inst_4B3AD81E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hieroglyphic_three" x="2496" y="256" name="inst_B13A33A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hieroglyphic_four" x="2144" y="1024" name="inst_D8394436" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hieroglyphic_five" x="2144" y="256" name="inst_5C538191" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hieroglyphic_seven" x="1824" y="1024" name="inst_6FFD799C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hieroglyphic_one" x="1824" y="256" name="inst_1754F104" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_anubis" x="224" y="288" name="inst_8B24EBC3" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_anubis" x="224" y="864" name="inst_ED69677A" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cat" x="1472" y="384" name="inst_A274EC0F" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pyramid" x="1504" y="256" name="inst_FD8A1666" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_diamond" x="160" y="576" name="inst_E0B71C49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_scarab_trap" x="3148" y="614" name="inst_AF879E8D" locked="0" code="" scaleX="1" scaleY="1.29999995231628" colour="4294967295" rotation="0"/>
+    <instance objName="obj_controller_rm_egypt" x="-64" y="-64" name="inst_CDB892C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_main_pyramid" x="1824" y="544" name="inst_65BE21C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hieroglyphic_three" x="1408" y="1024" name="inst_E15A62E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hieroglyphic_five" x="1056" y="1024" name="inst_80DFDCD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hieroglyphic_six" x="1120" y="256" name="inst_2535B96D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mummy" x="672" y="192" name="inst_D4C9531C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mummy" x="672" y="1120" name="inst_C3428952" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_activate_boss" x="896" y="640" name="inst_5D5C102A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block" x="64" y="800" name="inst_C99D1A7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block" x="64" y="224" name="inst_084C13A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_success_block" x="0" y="512" name="inst_5D17DB83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_success_block" x="0" y="640" name="inst_B2025E92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_egypt_success_enter" x="0" y="640" name="inst_5BAAC48F" locked="0" code="" scaleX="1" scaleY="0.800000011920929" colour="4294967295" rotation="90"/>
+    <instance objName="obj_pharaoh_one" x="352" y="593" name="inst_3453BFB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bullet_fifteen" x="3264" y="1152" name="inst_14B100A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_global" x="3360" y="0" w="128" h="128" xo="256" yo="128" id="10001775" name="inst_A271AAFC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -244,14 +261,6 @@
     <tile bgName="bg_global" x="-64" y="768" w="128" h="128" xo="256" yo="128" id="10001921" name="inst_EA4B66AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_global" x="-64" y="736" w="128" h="128" xo="256" yo="128" id="10001922" name="inst_EC330E59" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_global" x="-64" y="704" w="128" h="128" xo="256" yo="128" id="10001923" name="inst_2C9F50FC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_global" x="-64" y="672" w="128" h="128" xo="256" yo="128" id="10001924" name="inst_016FD833" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_global" x="-64" y="640" w="128" h="128" xo="256" yo="128" id="10001925" name="inst_A2DD795F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_global" x="-64" y="608" w="128" h="128" xo="256" yo="128" id="10001926" name="inst_38352B1F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_global" x="-64" y="480" w="128" h="128" xo="256" yo="128" id="10001927" name="inst_798BC365" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_global" x="-64" y="448" w="128" h="128" xo="256" yo="128" id="10001928" name="inst_C0E46928" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_global" x="-64" y="416" w="128" h="128" xo="256" yo="128" id="10001929" name="inst_372AFDDF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_global" x="-64" y="384" w="128" h="128" xo="256" yo="128" id="10001930" name="inst_E1894847" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_global" x="-64" y="352" w="128" h="128" xo="256" yo="128" id="10001931" name="inst_4A5A21B2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_global" x="-64" y="320" w="128" h="128" xo="256" yo="128" id="10001932" name="inst_62723469" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_global" x="-64" y="288" w="128" h="128" xo="256" yo="128" id="10001933" name="inst_B185773F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_global" x="-64" y="256" w="128" h="128" xo="256" yo="128" id="10001934" name="inst_6B6CDDA7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

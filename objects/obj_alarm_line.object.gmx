@@ -83,7 +83,9 @@ if(alarm_time &gt; 20 &amp;&amp; alarm_time &lt; 60) {
         lives -= 1;
         is_hit = true;
     }
-    audio_play_sound(sd_lazer, 1, false);
+    if(alarm_time = 21) {
+        audio_play_sound(sd_lazer, 1, false);
+    }
 }
 else if(alarm_time &gt; 60 &amp;&amp; alarm_time &lt; 70) {
     visible = false;

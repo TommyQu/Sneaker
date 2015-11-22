@@ -22,13 +22,20 @@
       <sound>sound\sd_fire_sprout</sound>
       <sound>sound\sd_lance_shoot</sound>
     </sounds>
-    <sounds name="sd_china">
-      <sound>sound\sd_buddha</sound>
+    <sounds name="sd_egypt">
+      <sound>sound\sd_egypt_bg</sound>
+      <sound>sound\sd_boss_bg</sound>
+      <sound>sound\sd_beetle</sound>
+      <sound>sound\sd_pharaoh_lazer</sound>
+      <sound>sound\sd_collect_diamond</sound>
+    </sounds>
+    <sound>sound\sd_game_success</sound>
+    <sounds name="sd_corridor">
+      <sound>sound\sd_rolling_ball</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_life_img</sprite>
-    <sprite>sprites\spr_player</sprite>
     <sprites name="spr_element">
       <sprites name="spr_entrance">
         <sprite>sprites\spr_musuem</sprite>
@@ -120,6 +127,9 @@
         <sprite>sprites\spr_helmet</sprite>
         <sprite>sprites\spr_warrior</sprite>
         <sprite>sprites\spr_sword_one</sprite>
+        <sprite>sprites\spr_treasure</sprite>
+        <sprite>sprites\spr_treasure_open</sprite>
+        <sprite>sprites\spr_note_four</sprite>
       </sprites>
       <sprites name="spr_greece">
         <sprite>sprites\spr_aristotle</sprite>
@@ -127,6 +137,8 @@
         <sprite>sprites\spr_greece_column</sprite>
         <sprite>sprites\spr_greece_vase</sprite>
         <sprite>sprites\spr_david</sprite>
+        <sprite>sprites\spr_door</sprite>
+        <sprite>sprites\spr_msg_should_find_pwd</sprite>
       </sprites>
       <sprites name="spr_egypt">
         <sprite>sprites\spr_anubis</sprite>
@@ -134,12 +146,12 @@
         <sprite>sprites\spr_sphinx_back</sprite>
         <sprite>sprites\spr_cat</sprite>
         <sprite>sprites\spr_pharaoh_one</sprite>
+        <sprite>sprites\spr_pharaoh_one_shield</sprite>
         <sprite>sprites\spr_pyramid</sprite>
         <sprite>sprites\spr_hieroglyph</sprite>
         <sprite>sprites\spr_mummy</sprite>
         <sprite>sprites\spr_scarab</sprite>
         <sprite>sprites\spr_pyramid_two</sprite>
-        <sprite>sprites\spr_mummy_head</sprite>
         <sprites name="spr_egypt_hieroglyphic">
           <sprite>sprites\spr_hieroglyphic_one</sprite>
           <sprite>sprites\spr_hieroglyphic_two</sprite>
@@ -149,16 +161,33 @@
           <sprite>sprites\spr_hieroglyphic_five</sprite>
           <sprite>sprites\spr_hieroglyphic_six</sprite>
           <sprite>sprites\spr_hieroglyphic_seven</sprite>
-          <sprite>sprites\sprite133</sprite>
         </sprites>
+        <sprite>sprites\spr_scarab_trap</sprite>
+        <sprite>sprites\spr_main_pyramid</sprite>
+        <sprite>sprites\spr_activate_boss</sprite>
+        <sprite>sprites\spr_pharaoh_one_lazer</sprite>
+        <sprite>sprites\spr_msg_get_diamond</sprite>
+        <sprite>sprites\spr_success_block</sprite>
       </sprites>
     </sprites>
     <sprites name="spr_menu">
       <sprite>sprites\spr_play</sprite>
       <sprite>sprites\spr_credit</sprite>
       <sprite>sprites\spr_title</sprite>
+      <sprite>sprites\spr_player_success</sprite>
       <sprite>sprites\spr_game_over</sprite>
       <sprite>sprites\spr_restart</sprite>
+      <sprite>sprites\spr_congratulations</sprite>
+      <sprite>sprites\spr_back</sprite>
+      <sprites name="spr_credit">
+        <sprite>sprites\spr_credit_one</sprite>
+        <sprite>sprites\spr_credit_two</sprite>
+        <sprite>sprites\spr_credit_six</sprite>
+        <sprite>sprites\spr_credit_three</sprite>
+        <sprite>sprites\spr_credit_four</sprite>
+        <sprite>sprites\spr_music_credit</sprite>
+      </sprites>
+      <sprite>sprites\spr_next</sprite>
     </sprites>
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_controller</sprite>
@@ -211,7 +240,11 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\path_african_people</path>
+    <path>paths\path_mummy</path>
   </paths>
+  <scripts name="scripts">
+    <script>scripts\scr_multitouch.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_enemy_one_life</object>
@@ -223,6 +256,18 @@
       <object>objects\obj_menu_diamond</object>
       <object>objects\obj_restart</object>
       <object>objects\obj_game_over</object>
+      <object>objects\obj_congratulations</object>
+      <object>objects\obj_player_success</object>
+      <object>objects\obj_back</object>
+      <objects name="obj_credit">
+        <object>objects\obj_credit_one</object>
+        <object>objects\obj_credit_two</object>
+        <object>objects\obj_credit_three</object>
+        <object>objects\obj_credit_four</object>
+        <object>objects\obj_credit_six</object>
+        <object>objects\obj_music_credit</object>
+      </objects>
+      <object>objects\obj_next</object>
     </objects>
     <objects name="obj_element">
       <objects name="obj_entrance">
@@ -320,6 +365,7 @@
         <object>objects\obj_helmet</object>
         <object>objects\obj_sword_one</object>
         <object>objects\obj_msg_pick_sword</object>
+        <object>objects\obj_treasure</object>
       </objects>
       <objects name="obj_greece">
         <object>objects\obj_greece_corridor_enter</object>
@@ -330,13 +376,14 @@
         <object>objects\obj_greece_vase</object>
         <object>objects\obj_david</object>
         <object>objects\obj_trap_david</object>
+        <object>objects\obj_door</object>
       </objects>
       <objects name="obj_egypt">
         <object>objects\obj_anubis</object>
         <object>objects\obj_sphinx</object>
         <object>objects\obj_sphinx_back</object>
         <object>objects\obj_heroglyph</object>
-        <object>objects\obj_scarb</object>
+        <object>objects\obj_scarab</object>
         <object>objects\obj_cat</object>
         <objects name="obj_egypt_hieroglyphic">
           <object>objects\obj_hieroglyphic_one</object>
@@ -348,9 +395,17 @@
           <object>objects\obj_hieroglyphic_seven</object>
         </objects>
         <object>objects\obj_pyramid</object>
-        <object>objects\obj_mummy_head</object>
         <object>objects\obj_mummy</object>
         <object>objects\obj_diamond</object>
+        <object>objects\obj_scarab_trap</object>
+        <object>objects\obj_main_pyramid</object>
+        <object>objects\obj_pharaoh_one</object>
+        <object>objects\obj_activate_boss</object>
+        <object>objects\obj_pharaoh_one_lazer</object>
+        <object>objects\obj_pharaoh_one_shield</object>
+        <object>objects\obj_msg_get_diamond</object>
+        <object>objects\obj_egypt_success_enter</object>
+        <object>objects\obj_success_block</object>
       </objects>
     </objects>
     <object>objects\obj_block</object>
@@ -367,20 +422,28 @@
       <object>objects\obj_controller_rm_africa</object>
       <object>objects\obj_controller_rm_painting</object>
       <object>objects\obj_controller_rm_rome</object>
+      <object>objects\obj_controller_rm_egypt</object>
     </objects>
     <objects name="obj_player">
       <object>objects\obj_player_down</object>
       <object>objects\obj_bullet</object>
       <object>objects\obj_bullet_pack</object>
+      <object>objects\obj_bullet_fifteen</object>
     </objects>
     <objects name="obj_gamebar">
       <object>objects\obj_gamebar_global</object>
       <object>objects\obj_up</object>
+      <object>objects\up_back</object>
       <object>objects\obj_down</object>
+      <object>objects\down_back</object>
       <object>objects\obj_left</object>
+      <object>objects\left_back</object>
       <object>objects\obj_right</object>
+      <object>objects\right_back</object>
       <object>objects\obj_a</object>
+      <object>objects\a_back</object>
       <object>objects\obj_b</object>
+      <object>objects\b_back</object>
     </objects>
     <objects name="obj_enemy">
       <object>objects\obj_ghost</object>
@@ -410,6 +473,9 @@
       <room>rooms\rm_egypt</room>
     </rooms>
     <room>rooms\rm_game_over</room>
+    <room>rooms\rm_success</room>
+    <room>rooms\rm_credit</room>
+    <room>rooms\rm_music_credit</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

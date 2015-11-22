@@ -28,8 +28,11 @@
             <string>with(obj_message) {
     instance_destroy();
 }
-instance_create(obj_vending_machine_normal_one.x, obj_vending_machine_normal_one.y + 130, obj_message);
-obj_message.sprite_index = spr_put_coin;
+if(global.has_coin = false) {
+    instance_create(obj_vending_machine_normal_one.x, obj_vending_machine_normal_one.y + 130, obj_message);
+    obj_message.sprite_index = spr_put_coin;
+}
+
 </string>
           </argument>
         </arguments>

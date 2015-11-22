@@ -109,12 +109,11 @@
     <instance objName="obj_shield" x="128" y="128" name="inst_F9433A9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shield" x="1760" y="128" name="inst_112027E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shield" x="128" y="384" name="inst_DF067799" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_shield" x="640" y="128" name="inst_B590B8D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shield" x="648" y="128" name="inst_B590B8D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hammer" x="832" y="128" name="inst_8E4FF2C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hammer" x="2144" y="224" name="inst_0BEC2BD8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hammer" x="1472" y="128" name="inst_DADEC3FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hammer" x="256" y="128" name="inst_15CF68FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_helmet" x="448" y="128" name="inst_042E0223" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_helmet" x="480" y="128" name="inst_042E0223" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_helmet" x="1920" y="128" name="inst_19BF05F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_helmet" x="1152" y="128" name="inst_D77CEB86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_helmet" x="128" y="512" name="inst_F381A242" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -123,10 +122,11 @@
     <instance objName="obj_msg_pick_sword" x="1088" y="32" name="inst_49FD94D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hammer" x="128" y="256" name="inst_509DA246" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shield" x="1312" y="128" name="inst_1964751C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_shield" x="2144" y="352" name="inst_09714684" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shield" x="2080" y="128" name="inst_B600CF5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_helmet" x="1618" y="128" name="inst_98288577" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warrior_two" x="1888" y="480" name="inst_19A3EBB6" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_treasure" x="316" y="128" name="inst_47E6A9E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bullet_pack" x="2135" y="352" name="inst_670AEB41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_global" x="-64" y="0" w="128" h="128" xo="256" yo="128" id="10001630" name="inst_2AE6E52E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

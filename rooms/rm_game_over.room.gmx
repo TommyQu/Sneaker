@@ -13,6 +13,12 @@
   <code>with(obj_player) {
     instance_destroy();
 }
+with(obj_tool) {
+    instance_destroy();
+}
+with(obj_gamebar_global) {
+    instance_destroy();
+}
 audio_play_sound(sd_game_over, 1, false);
 global.is_playing_bg = false;
 audio_stop_sound(sd_game_bg);</code>

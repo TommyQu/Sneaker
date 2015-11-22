@@ -59,9 +59,11 @@
     globalvar has_note_one;
     globalvar has_note_two;
     globalvar has_note_three;
+    globalvar has_note_four;
     has_note_one = false;
     has_note_two = false;
     has_note_three = false;
+    has_note_four = false;
     
     globalvar isTouched_ball_trap;
     globalvar get_china_bullet;
@@ -73,13 +75,15 @@
     frame_hint = 0;
     
     globalvar bullet_num;
-    bullet_num = 7;
+    bullet_num = 10;
     
     globalvar is_playing_bg;
     is_playing_bg = false;
     with(obj_player) {
         instance_destroy();
     }
+    
+    audio_stop_all();
 }</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>

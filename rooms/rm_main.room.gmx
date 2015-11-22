@@ -36,6 +36,7 @@
         global.rm_restaurant_index = 0;
         obj_player.x = 256;
         obj_player.y = 806;
+        audio_stop_sound(sd_fountain);
     }
     
 }</code>

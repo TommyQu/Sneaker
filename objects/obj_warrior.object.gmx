@@ -174,7 +174,7 @@
             <string>if(distance_to_point(obj_player.x, obj_player.y) &lt; 600) {
     isChasing = true;
 }
-if(distance_to_point(obj_player.x, obj_player.y) &lt; 120) {
+if(distance_to_point(obj_player.x, obj_player.y) &lt; 150) {
     isCollide = true;
 }
 else {
@@ -439,7 +439,7 @@ if(damage_cd &gt; 500) {
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>damage_cd%100</string>
+            <string>damage_cd%60</string>
           </argument>
           <argument>
             <kind>0</kind>

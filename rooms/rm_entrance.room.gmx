@@ -16,6 +16,13 @@
     
     obj_player.x = 864;
     obj_player.y = 384;
+    
+    instance_create(0, 0, obj_up);
+    instance_create(0, 0, obj_down);
+    instance_create(0, 0, obj_left);
+    instance_create(0, 0, obj_right);
+    instance_create(0, 0, obj_a);
+    instance_create(0, 0, obj_b);
 }</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
@@ -47,7 +54,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1136" hview="640" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1136" hview="640" xport="0" yport="0" wport="1136" hport="640" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -59,10 +66,6 @@
   <instances>
     <instance objName="obj_museum" x="384" y="0" name="inst_7599E8CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="864" y="384" name="inst_B1AE76A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="736" y="128" name="inst_A473BE84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="928" y="128" name="inst_36C14540" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="832" y="288" name="inst_883310C2" locked="0" code="" scaleX="1.00787401199341" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="192" y="128" name="inst_395D413F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_entrance_main_enter" x="448" y="256" name="inst_3BF87D70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="0" y="608" name="inst_0559F019" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="128" y="608" name="inst_135A868E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -96,16 +99,14 @@
     <instance objName="obj_block" x="-96" y="416" name="inst_59DE5D45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="-96" y="288" name="inst_AAD52E07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="-96" y="544" name="inst_87535A3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="192" y="288" name="inst_567F0592" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_moon" x="32" y="32" name="inst_D5AF5A01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_controller_rm_entrance" x="192" y="32" name="inst_A2855843" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_up" x="256" y="416" name="inst_3EEBC6F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_down" x="267" y="544" name="inst_91F43A5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_left" x="160" y="480" name="inst_179BADBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_right" x="359" y="471" name="inst_B48BD882" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_a" x="1056" y="481" name="inst_5E8AB06F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tool" x="1088" y="256" name="inst_4ACB97CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_b" x="960" y="576" name="inst_E77D6771" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_house_one" x="736" y="128" name="inst_1EE64F2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_house_two" x="192" y="128" name="inst_FB23F96D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_house_three" x="928" y="128" name="inst_4876AA09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_car" x="832" y="256" name="inst_8B714A8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_car" x="192" y="256" name="inst_7A13CFC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_entrance" x="0" y="416" w="128" h="128" xo="128" yo="128" id="10000292" name="inst_1E2FC6CB" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

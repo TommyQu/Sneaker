@@ -106,6 +106,7 @@
     <instance objName="obj_pottery" x="576" y="87" name="inst_B90A8F2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pottery" x="800" y="583" name="inst_3C9C5E40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pottery" x="576" y="374" name="inst_92D3BDFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bullet_pack" x="685" y="64" name="inst_0F8E6182" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_global" x="-96" y="0" w="128" h="128" xo="256" yo="128" id="10001547" name="inst_52A438DF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
